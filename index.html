@@ -10,30 +10,50 @@
   <body>
     <div class="container">
       <div class="jumbotron">
+          <img src="https://cdn1.iconfinder.com/data/icons/business-and-office-4-3/128/167-512.png" alt="A picture of a die">
         <h1>Pig Dice</h1>
+        <button class="compButton" id="chooseFriend" type="button" name="button">Play against your Friend!</button>
+        <button class="compButton" type="button" id="chooseComp" name="button">Play the Computer!</button>
       </div>
-      <div class="container" class="form-control">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6" >
-            <h3 id="playerOne"></h3>
-            <p>Total Score:<span id="oneScore"></span></p>
-            <button id="rollOne" type="button">Roll!</button>
-            <button id="holdOne" type="button">Hold!</button>
-            <div id="dieOne">
-              <p>You rolled:</p>
-            </div>
-          </div>
           <div class="col-md-6">
-            <h3 id="playerTwo"></h3>
-            <p>Total Score:<span id="twoScore"></span></p>
-            <button id="rollTwo" type="button">Roll!</button>
-            <button id="holdTwo" type="button">Hold!</button>
-            <div id="dieTwo">
-              <p>You rolled:</p>
+            <div class="card card-default">
+              <div class="card-body">
+                <h3 id="playerOne"></h3>
+                <p class="card-header">Total Score:<span id="oneScore"></span></p>
+                <button id="rollOne" type="button">Roll!</button>
+                <button id="holdOne" type="button">Hold!</button>
+                <div id="dieOne">
+                  <p>You rolled:</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 card card-default">
+            <div class="card-body">
+              <h3 id="playerTwo"></h3>
+              <p class="card-header">Total Score:<span id="twoScore"></span></p>
+              <button id="rollTwo" type="button">Roll!</button>
+              <button id="holdTwo" type="button">Hold!</button>
+              <div id="dieTwo">
+                <p>You rolled:</p>
             </div>
           </div>
         </div>
+        </div>
       </div>
+
+      <div class="card card-default">
+        <div class="card-body">
+          <h3>Computer</h3>
+          <p class="card-header">Computer's Total Score:<span id="twoScore"></span></p>
+          <div id="computerTurn">
+            <p>The computer rolled:</p>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
